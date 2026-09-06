@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-Idependencies",
+      "-c",
+      "-o",
+      "src/glad.o",
+      "src/glad.c"
+    ],
+    "directory": "/home/Fluctum11/Documents/Code/OpenGL_Project",
+    "file": "/home/Fluctum11/Documents/Code/OpenGL_Project/src/glad.c",
+    "output": "/home/Fluctum11/Documents/Code/OpenGL_Project/src/glad.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-Idependencies",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/Fluctum11/Documents/Code/OpenGL_Project",
+    "file": "/home/Fluctum11/Documents/Code/OpenGL_Project/src/main.cpp",
+    "output": "/home/Fluctum11/Documents/Code/OpenGL_Project/src/main.o"
+  }
+]
