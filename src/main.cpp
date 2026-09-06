@@ -83,11 +83,11 @@ int main()
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader lightingShader("/Users/diego/Documents/code/openglProject/dependencies/include/shaders/colors.vs", "/Users/diego/Documents/code/openglProject/dependencies/include/shaders/colors.fs");
-    Shader lightCubeShader("/Users/diego/Documents/code/openglProject/dependencies/include/shaders/light_cube.vs", "/Users/diego/Documents/code/openglProject/dependencies/include/shaders/light_cube.fs");
-    Shader lineShader("/Users/diego/Documents/code/openglProject/dependencies/include/shaders/line.vs", "/Users/diego/Documents/code/openglProject/dependencies/include/shaders/line.fs");
-    Shader sphereShader("/Users/diego/Documents/code/openglProject/dependencies/include/shaders/sphere.vs", "/Users/diego/Documents/code/openglProject/dependencies/include/shaders/sphere.fs");
-    Shader planeShader("/Users/diego/Documents/code/openglProject/dependencies/include/shaders/plane.vs", "/Users/diego/Documents/code/openglProject/dependencies/include/shaders/plane.fs");
+    Shader lightingShader("dependencies/include/shaders/colors.vs", "dependencies/include/shaders/colors.fs");
+    Shader lightCubeShader("dependencies/include/shaders/light_cube.vs", "dependencies/include/shaders/light_cube.fs");
+    Shader lineShader("dependencies/include/shaders/line.vs", "dependencies/include/shaders/line.fs");
+    Shader sphereShader("dependencies/include/shaders/sphere.vs", "dependencies/include/shaders/sphere.fs");
+    Shader planeShader("dependencies/include/shaders/plane.vs", "dependencies/include/shaders/plane.fs");
 
     float planeVerticies[] = {
         4.0f, 2.0f, 0.0f,
@@ -322,8 +322,8 @@ int main()
     glEnableVertexAttribArray(0);
 
     // loading texture
-    unsigned int diffuseMap = loadTexture("/Users/diego/Documents/code/openglProject/imgs/container2.png");
-    unsigned int specularMap = loadTexture("/Users/diego/Documents/code/openglProject/imgs/container2_specular.png");
+    unsigned int diffuseMap = loadTexture("imgs/container2.png");
+    unsigned int specularMap = loadTexture("imgs/container2_specular.png");
 
 
     // note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
