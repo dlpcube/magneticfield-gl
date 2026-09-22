@@ -525,6 +525,12 @@ void processInput(GLFWwindow *window)
     {
         camera.ProcessKeyboard(RIGHT, deltaTime);
     }
+
+    if (glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS)
+    {
+        const GLFWvidmode* mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+        glfwSetWindowMonitor(window, glfwGetPrimaryMonitor(), 0, 0, mode->width, mode->height, mode->refreshRate);
+    }
     
 }
 
