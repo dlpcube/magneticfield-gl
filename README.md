@@ -3,8 +3,6 @@
 A 3D magnetic field visualizer made with an OpenGL backend. Implements lighting and vectors to show the direction and strength of the field at different cartesian coordinates. Field strength is also contingent on the object shape and material just like in real life. Also implements a 3D camera for user control.
 
 ![Alt Text](ref_images/magneticfield-gl-img1.jpg)
-![Alt Text](ref_images/magneticfield-gl-img-2.jpg)
-
 
 <img width="480" height="455" alt="smaller" src="https://github.com/user-attachments/assets/9ad6243f-0093-4441-b816-bbd1bb73845c" />
 
